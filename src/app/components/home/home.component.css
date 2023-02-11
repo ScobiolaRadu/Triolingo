@@ -1,0 +1,17 @@
+.welcome{
+    text-align: center;
+    padding-top: 32px;
+}
+
+.mascot{
+    width:5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.content{
+    text-align: center;
+    padding: 32px;
+    font-size: larger;
+}

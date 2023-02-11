@@ -1,0 +1,38 @@
+.title{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 32px;
+    color: white;
+}
+
+.content{
+    width: 40%;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 32px;
+    padding-left: 30%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.background{
+    background-image: url(/assets/mountains.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 85vh;
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    padding-top: 32px;
+    max-height: 10%;
+    max-width: 10%;
+    padding-left: 45%;
+}

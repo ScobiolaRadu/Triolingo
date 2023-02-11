@@ -1,0 +1,25 @@
+<div class="lesson-container">
+    <div class="lesson-header">
+      {{ lessonTitle }}
+    </div>
+  </div>
+
+  <div class="slideshow">
+    <div class="slide" [ngStyle]="{'display': currentSlideIndex === index ? 'block' : 'none'}" *ngFor="let slide of slides; let index = index">
+      <div class="slide-content">
+        <p class="text">{{slide.text}}</p>
+        <img class="image" [src]="slide.imageUrl">
+        <p class="text-2">{{slide.text2}}</p>
+      </div>
+    </div>
+    <div class="slide-nav">
+      <button (click)="previousSlide()" [disabled]="currentSlideIndex === 0">&lt;</button>
+      <button (click)="nextSlide()" [disabled]="currentSlideIndex === slides.length - 1">&gt;</button>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  

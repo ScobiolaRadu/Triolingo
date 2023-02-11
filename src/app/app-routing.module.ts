@@ -6,6 +6,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
 import {canActivate, redirectUnauthorizedTo, redirectLoggedInTo} from '@angular/fire/auth-guard';
+import { LessonComponent } from './components/lesson/lesson.component';
+import { TestComponent } from './components/test/test.component';
 
 const redirectToLogin = () => redirectUnauthorizedTo(['login']);
 const redirectToHome = () => redirectLoggedInTo(['home']);
@@ -31,6 +33,32 @@ const routes: Routes = [
   path:'home',
   component: HomeComponent,
   ...canActivate(redirectToLogin)
+  },
+  {
+    path:'lesson/Animals', 
+    component: LessonComponent,
+    ...canActivate(redirectToLogin)
+  },
+  {
+    path:'lesson/Colors', 
+    component: LessonComponent,
+    ...canActivate(redirectToLogin)
+  },
+  {
+    path:'lesson/Numbers', 
+    component: LessonComponent,
+    ...canActivate(redirectToLogin)
+  },
+  {
+    path:'lesson/People', 
+    component: LessonComponent,
+    ...canActivate(redirectToLogin)
+  },
+
+  {
+    path:'test',
+    component: TestComponent,
+    ...canActivate(redirectToLogin)
   }
 
 ];

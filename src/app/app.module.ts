@@ -19,6 +19,12 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule,} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { LessonComponent } from './components/lesson/lesson.component';
+import { LessonlistComponent } from './components/lessonlist/lessonlist.component';
+import { TestComponent } from './components/test/test.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,10 @@ import { MatMenuModule } from '@angular/material/menu';
     LandingComponent,
     LoginComponent,
     SignUpComponent,
-    HomeComponent
+    HomeComponent,
+    LessonComponent,
+    LessonlistComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +51,9 @@ import { MatMenuModule } from '@angular/material/menu';
     provideAuth(() => getAuth()),
     HotToastModule.forRoot(),
     MatMenuModule,
+    MatSidenavModule,
+    MatListModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
